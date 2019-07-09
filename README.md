@@ -1,6 +1,8 @@
 # LinuxMint 一键安装脚本
 在新安装好Mint之后, 一键安装常用的软件。
 
+![](https://raw.githubusercontent.com/Baloneo/quickkkk/master/mypc.png)
+
 ## 使用
 * 安装配置基本环境
 ```
