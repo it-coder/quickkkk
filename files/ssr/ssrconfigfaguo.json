@@ -1,0 +1,14 @@
+{
+    "server": "x",
+    "server_port": x,
+    "password": "x",
+    "method": "aes-256-cfb",
+    "protocol": "origin",
+    "protocol_param": "",
+    "obfs": "http_simple",
+    "obfs_param": "bing.com",
+    "local_address": "127.0.0.1",
+    "local_port": 2080,
+    "udp": true,
+    "timeout": 300
+}
