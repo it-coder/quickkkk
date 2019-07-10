@@ -34,7 +34,7 @@ l_download = [
     "git clone --depth 1 https://github.com/nana-4/materia-theme ~/quickkkk_download/materia-theme",
 
     # 3: 下载字体
-    "wget https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip -O ~/quickkkk_download/FiraCode_1.206",
+    "git clone --depth 1 https://gitee.com/alonebo/FiraCode.git ~/quickkkk_download/FiraCode",
 
     # 4: 下载wine
     "git clone https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git ~/quickkkk_download/deepin-wine-for-ubuntu",
