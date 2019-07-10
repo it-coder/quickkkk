@@ -1,17 +1,23 @@
 
 l_init = [
     # 创建本项目文件存储路径
-    "mkdir ~/quickkkk_download",
-    "mkdir ~/software",
-    "mkdir ~/.icons",
+    
+    "mkdir -p ~/quickkkk_download",
+    "mkdir -p ~/software",
+    "mkdir -p ~/.icons",
 
     # 配置中文快捷方式 
     "ln -s $HOME/文档 $HOME/Documents", 
     "ln -s $HOME/下载 $HOME/Downloads",
+    'ln -s $HOME/图片 $HOME/Images'
 
     "sudo apt update",
     # 安装基本的软件
     "sudo apt install -y vim curl wget git unar zsh",
+
+    # 配置终端 xfce4
+    # "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/"
+
 ]
 
 l_download = [
@@ -70,7 +76,10 @@ l_download = [
     "wget https://download.jetbrains.8686c.com/python/pycharm-professional-2019.1.3.tar.gz -O ~/quickkkk_download/pycharm-professional-2019.1.3.tar.gz",
 
     # 18: 鼠标主题
-    "git clone https://github.com/keeferrourke/capitaine-cursors.git ~/quickkkk_download/capitaine-cursors"
+    "git clone https://github.com/keeferrourke/capitaine-cursors.git ~/quickkkk_download/capitaine-cursors",
+
+    # 19: clion
+    "wget https://download.jetbrains.8686c.com/cpp/CLion-2019.1.4.tar.gz -O ~/quickkkk_download/CLion-2019.1.4.tar.gz"
 
 ]
 
@@ -80,9 +89,8 @@ l_install = [
     'echo "pass"',
 
     # 1: oh-my-zsh
-    # "rm -rf ~/.oh-my-zsh",
-    # "sh ~/quickkkk_download/ohmyzsh-install.sh",
-    'echo "pass"',
+    "rm -rf ~/.oh-my-zsh;sh ~/quickkkk_download/ohmyzsh-install.sh",
+    # 'echo "pass"',
 
     # 2: 图标 主题
     "cp -r ~/quickkkk_download/flat-remix/* ~/.icons;sudo ~/quickkkk_download/materia-theme/install.sh",
@@ -121,8 +129,8 @@ l_install = [
     "unar ~/quickkkk_download/Typora-linux-x64.tar.gz -o ~/software",
 
     # 14: virtualbox
-    # "sudo dpkg -i ~/quickkkk_download/virtualbox*.deb",
-    'echo "pass"',
+    "sudo dpkg -i ~/quickkkk_download/virtualbox*.deb",
+    # 'echo "pass"',
 
     # 15: ssr
     # "cp ./files/ssr ~/software",
@@ -139,16 +147,21 @@ l_install = [
 
     # 19: nitroshare
     # "sudo apt-get install nitroshare",
-    'echo "pass"',
+    'echo "nitroshare pass"',
 
     # 20: vlc
     "sudo apt install vlc",
 
     # 21: smplayer
     # "sudo apt install smplayer",
-    'echo "pass"',
+    'echo "smplayer pass"',
 
     # 22: 鼠标主题
     "cp -r ~/quickkkk_download/capitaine-cursors/dist ~/.icons/capitaine-cursors",
 
+    # 23: pycharm
+    "unar ~/quickkkk_download/pycharm-professional-2019.1.3.tar.gz -o ~/software/",
+
+    # 24: clion
+    "unar ~/quickkkk_download/CLion-2019.1.4.tar.gz -o ~/software/",
 ]
