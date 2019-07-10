@@ -9,14 +9,14 @@ l_init = [
     # 配置中文快捷方式 
     "ln -s $HOME/文档 $HOME/Documents", 
     "ln -s $HOME/下载 $HOME/Downloads",
-    'ln -s $HOME/图片 $HOME/Images'
+    'ln -s $HOME/图片 $HOME/Images',
 
     "sudo apt update",
     # 安装基本的软件
     "sudo apt install -y vim curl wget git unar zsh",
 
     # 配置终端 xfce4
-    # "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/"
+    "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/"
 
 ]
 
