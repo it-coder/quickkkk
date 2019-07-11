@@ -1,27 +1,43 @@
 
 l_init = [
     # 创建本项目文件存储路径
-    
-    "mkdir -p ~/quickkkk_download",
-    "mkdir -p ~/software",
-    "mkdir -p ~/.icons",
+    "echo 'pass'",
+    "mkdir -p ~/quickkkk_download",  # 1
+    "mkdir -p ~/software",  # 2
+    "mkdir -p ~/.icons",  # 3
 
     # 配置中文快捷方式 
-    "ln -s $HOME/文档 $HOME/Documents", 
-    "ln -s $HOME/下载 $HOME/Downloads",
-    'ln -s $HOME/图片 $HOME/Images',
+    "ln -s $HOME/文档 $HOME/Documents",   # 4
+    "ln -s $HOME/下载 $HOME/Downloads",  # 5
+    'ln -s $HOME/图片 $HOME/Images',  # 6
 
-    "sudo apt update",
+    "sudo apt update",  # 7
     # 安装基本的软件
-    "sudo apt install -y vim curl wget git unar zsh",
+    "sudo apt install -y vim curl wget git unar zsh",  # 8
 
     # 配置终端 xfce4
-    "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/",
+    "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/",  # 9
+
+
+
+    # 删除不必要的软件
+    "apt remove thunderbird",  #10
+
+    # 卸载libreoffice
+    'sudo apt-get purge "libreoffice?"',  # 11
 
     # 配置 git
     # "git config --global user.email alonebo.zhou@gmail.com",
     # "git config --global user.name baloneo",
+]
 
+l_download_test = [
+    "echo 'cmd 0'",
+    "echo 'cmd 1'",
+    "echo 'cmd 2'",
+    "mkdir /tmp/tet",
+    "echo 'cmd 4'",
+    "echo 'cmd 5'",
 ]
 
 l_download = [
@@ -39,7 +55,7 @@ l_download = [
 
     # 3: 下载字体
     # "git clone https://gitee.com/alonebo/FiraCode.git ~/quickkkk_download/FiraCode",
-    'echo "pass"'
+    'echo "pass"',
 
     # 4: 下载wine
     "git clone https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git ~/quickkkk_download/deepin-wine-for-ubuntu",
@@ -76,6 +92,7 @@ l_download = [
 
     # 15: virtualbox
     # "wget https://download.virtualbox.org/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb -O ~/quickkkk_download/virtualbox-ubuntu18.deb",
+    "echo 'pass'",
 
     # 17: pycharm-professional
     "wget https://download.jetbrains.8686c.com/python/pycharm-professional-2019.1.3.tar.gz -O ~/quickkkk_download/pycharm-professional-2019.1.3.tar.gz",
@@ -87,7 +104,7 @@ l_download = [
     "wget https://download.jetbrains.8686c.com/cpp/CLion-2019.1.4.tar.gz -O ~/quickkkk_download/CLion-2019.1.4.tar.gz",
 
     # 20: 下载wps字体
-    "git clone https://github.com/iamdh4/ttf-wps-fonts.git ~/quickkkk_download/ttf-wps-fonts"
+    "git clone https://github.com/iamdh4/ttf-wps-fonts.git ~/quickkkk_download/ttf-wps-fonts",
 
 ]
 
@@ -97,7 +114,7 @@ l_install = [
     'echo "pass"',
 
     # 1: oh-my-zsh
-    "rm -rf ~/.oh-my-zsh;sh ~/quickkkk_download/ohmyzsh-install.sh",
+    "sh ~/quickkkk_download/ohmyzsh-install.sh",
     # 'echo "pass"',
 
     # 2: 图标 主题
@@ -174,5 +191,14 @@ l_install = [
     "unar ~/quickkkk_download/CLion-2019.1.4.tar.gz -o ~/software/",
 
     # 25: wps字体
-    "cd ~/quickkkk_download/ttf-wps-fonts;sudo bash install.sh"
+    "cd ~/quickkkk_download/ttf-wps-fonts;sudo bash install.sh",
+
+    # 26: htop
+    "sudo apt install -y htop",
 ]
+
+if __name__ == "__main__":
+    print("len l_init: ", len(l_init))
+    print("len l_download: ", len(l_download))
+    print("len l_install: ", len(l_install))
+
