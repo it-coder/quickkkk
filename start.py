@@ -57,7 +57,7 @@ def exec_cmd(*,li_cmd, start, end, name, debug=False):
         p.wait()
         if p.returncode != 0:
             red_print("第 {} 条{}命令错误, {}".format(i+_start, name, cmd))
-            print("解决错误之后从错误命令开始执行： start.py {} {}:".format(name, i+start))
+            print("解决错误之后从错误命令开始执行： start.py {} {}:".format(name, i+_start))
             sys.exit(-1)
         green_print("命令执行成功: {}".format(cmd))
 

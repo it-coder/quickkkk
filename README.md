@@ -1,5 +1,5 @@
-# LinuxMint 一键安装脚本
-在新安装好Mint之后, 一键安装常用的软件。
+# quickkkk
+快速配置你的Ubuntu/Mint操作系统
 
 ![](https://raw.githubusercontent.com/Baloneo/quickkkk/master/mypc.png)
 
