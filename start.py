@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os,sys,random
 import subprocess
 from cmd_config import l_init, l_download, l_install

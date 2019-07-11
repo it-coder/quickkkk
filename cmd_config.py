@@ -1,3 +1,11 @@
+#!/use/bin/env python3
+
+
+"""
+1. 打开设置界面，安装语言和输入法，输入法选择ibus，安装好之后重启
+2. 打开软件更新管理器，更新系统软件
+3. 运行本脚本
+"""
 
 l_init = [
     # 创建本项目文件存储路径
@@ -16,9 +24,8 @@ l_init = [
     "sudo apt install -y vim curl wget git unar zsh",  # 8
 
     # 配置终端 xfce4
-    "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/",  # 9
-
-
+    # "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/",  # 9
+    'echo "xfce终端设置，可选操作, 不执行"',
 
     # 删除不必要的软件
     "apt remove thunderbird",  #10
@@ -54,8 +61,8 @@ l_download = [
     "git clone --depth 1 https://github.com/nana-4/materia-theme ~/quickkkk_download/materia-theme",
 
     # 3: 下载字体
-    # "git clone https://gitee.com/alonebo/FiraCode.git ~/quickkkk_download/FiraCode",
-    'echo "pass"',
+    "wget https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip -O ~/quickkkk_download/FiraCode",
+    # 'echo "pass"',
 
     # 4: 下载wine
     "git clone https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git ~/quickkkk_download/deepin-wine-for-ubuntu",
@@ -92,7 +99,7 @@ l_download = [
 
     # 15: virtualbox
     # "wget https://download.virtualbox.org/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb -O ~/quickkkk_download/virtualbox-ubuntu18.deb",
-    "echo 'pass'",
+    "echo '自己手动下载virtualbox'",
 
     # 17: pycharm-professional
     "wget https://download.jetbrains.8686c.com/python/pycharm-professional-2019.1.3.tar.gz -O ~/quickkkk_download/pycharm-professional-2019.1.3.tar.gz",
@@ -155,11 +162,11 @@ l_install = [
 
     # 14: virtualbox
     # "sudo dpkg -i ~/quickkkk_download/virtualbox*.deb",
-    'echo "pass"',
+    'echo "自己手动安装virtualbox"',
 
     # 15: ssr
-    # "cp ./files/ssr ~/software",
-    'echo "pass"',
+    "cp ./files/ssr ~/software",
+    # 'echo "pass"',
 
     # 16: gtk3 dev
     "sudo apt install -y libgtk-3-dev g++ cmake ipython3",
@@ -195,6 +202,10 @@ l_install = [
 
     # 26: htop
     "sudo apt install -y htop",
+
+    # 27: 代理方式打开chrome 安装代理插件
+    # 'google-chrome --proxy-server="socks5://127.0.0.1:2080"',
+    'echo "可选操作，命令行打开chrome 设置代理"',
 ]
 
 if __name__ == "__main__":

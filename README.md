@@ -5,17 +5,34 @@
 
 ## 使用
 * 安装配置基本环境
+下载本项目
+```
+git clone https://github.com/Baloneo/quickkkk.git
+```
+切换工作目录
+```
+cd quickkkk
+```
+创建下载基本的软件环境
 ```
 python3 start.py init
 ```
 
 * 下载安装包等
+下载的文件在`~/quickkkk_download`
 ```
-python3 start.py download
-python3 start.py download 1:2  # 下载制定列表的下标为[1:2) 包前不包后，也就是指定arr[1]的元素
+python3 start.py download  # 执行下载所有
+python3 start.py download 1:2  # 执行下载制定列表的下标为[1:2) 包前不包后，也就是指定arr[1]的元素
+python3 start.py download 3:  # 执行下载制定列表的下标为3到后面所有
+```
+
+* 打印所有命令
+```
+python3 start.py print
 ```
 
 * 安装
+解压安装的文件在`~/software`
 ```
 python3 start.py install
 ```
@@ -24,7 +41,7 @@ python3 start.py install
 ## 软件列表
 * flat-remix图标
 * materia-theme主题
-* FiraCode字体(自己安装)
+* FiraCode字体
 * 悬浮网速内存指示器
 * sfs
 * 网易云
