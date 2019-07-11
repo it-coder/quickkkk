@@ -16,7 +16,11 @@ l_init = [
     "sudo apt install -y vim curl wget git unar zsh",
 
     # 配置终端 xfce4
-    "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/"
+    "cp ./files/config_file/terminalrc ~/.config/xfce4/terminal/",
+
+    # 配置 git
+    # "git config --global user.email alonebo.zhou@gmail.com",
+    # "git config --global user.name baloneo",
 
 ]
 
@@ -34,7 +38,8 @@ l_download = [
     "git clone --depth 1 https://github.com/nana-4/materia-theme ~/quickkkk_download/materia-theme",
 
     # 3: 下载字体
-    "git clone --depth 1 https://gitee.com/alonebo/FiraCode.git ~/quickkkk_download/FiraCode",
+    # "git clone https://gitee.com/alonebo/FiraCode.git ~/quickkkk_download/FiraCode",
+    'echo "pass"'
 
     # 4: 下载wine
     "git clone https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu.git ~/quickkkk_download/deepin-wine-for-ubuntu",
@@ -70,7 +75,7 @@ l_download = [
     "wget https://typora.io/linux/Typora-linux-x64.tar.gz -O ~/quickkkk_download/Typora-linux-x64.tar.gz",
 
     # 15: virtualbox
-    "wget https://download.virtualbox.org/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb -O ~/quickkkk_download/virtualbox-ubuntu18.deb",
+    # "wget https://download.virtualbox.org/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb -O ~/quickkkk_download/virtualbox-ubuntu18.deb",
 
     # 17: pycharm-professional
     "wget https://download.jetbrains.8686c.com/python/pycharm-professional-2019.1.3.tar.gz -O ~/quickkkk_download/pycharm-professional-2019.1.3.tar.gz",
@@ -79,7 +84,10 @@ l_download = [
     "git clone https://github.com/keeferrourke/capitaine-cursors.git ~/quickkkk_download/capitaine-cursors",
 
     # 19: clion
-    "wget https://download.jetbrains.8686c.com/cpp/CLion-2019.1.4.tar.gz -O ~/quickkkk_download/CLion-2019.1.4.tar.gz"
+    "wget https://download.jetbrains.8686c.com/cpp/CLion-2019.1.4.tar.gz -O ~/quickkkk_download/CLion-2019.1.4.tar.gz",
+
+    # 20: 下载wps字体
+    "git clone https://github.com/iamdh4/ttf-wps-fonts.git ~/quickkkk_download/ttf-wps-fonts"
 
 ]
 
@@ -129,8 +137,8 @@ l_install = [
     "unar ~/quickkkk_download/Typora-linux-x64.tar.gz -o ~/software",
 
     # 14: virtualbox
-    "sudo dpkg -i ~/quickkkk_download/virtualbox*.deb",
-    # 'echo "pass"',
+    # "sudo dpkg -i ~/quickkkk_download/virtualbox*.deb",
+    'echo "pass"',
 
     # 15: ssr
     # "cp ./files/ssr ~/software",
@@ -140,7 +148,7 @@ l_install = [
     "sudo apt install -y libgtk-3-dev g++ cmake ipython3",
 
     # 17: 设置go环境
-    'echo "export PATH=$PATH:$HOME/software/go/bin" >> ~/.zshrc.txt;echo "export PATH=$PATH:$HOME/software/go/bin" >> ~/.bashrc.txt;',
+    'echo "export PATH=$PATH:$HOME/software/go/bin" >> ~/.zshrc;echo "export PATH=$PATH:$HOME/software/go/bin" >> ~/.bashrc;',
 
     # 18: neofetch
     "sudo add-apt-repository ppa:dawidd0811/neofetch;sudo apt update;sudo apt install neofetch",
@@ -164,4 +172,7 @@ l_install = [
 
     # 24: clion
     "unar ~/quickkkk_download/CLion-2019.1.4.tar.gz -o ~/software/",
+
+    # 25: wps字体
+    "cd ~/quickkkk_download/ttf-wps-fonts;sudo bash install.sh"
 ]
