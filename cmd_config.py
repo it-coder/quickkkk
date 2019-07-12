@@ -2,6 +2,7 @@
 
 
 """
+0. 更改源
 1. 打开设置界面，安装语言和输入法，输入法选择ibus，安装好之后重启
 2. 打开软件更新管理器，更新系统软件
 3. 运行本脚本
@@ -206,6 +207,9 @@ l_install = [
     # 27: 代理方式打开chrome 安装代理插件
     # 'google-chrome --proxy-server="socks5://127.0.0.1:2080"',
     'echo "可选操作，命令行打开chrome 设置代理"',
+
+    # 28
+    "apt install python3-pip",
 ]
 
 if __name__ == "__main__":

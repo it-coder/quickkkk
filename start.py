@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
+
 import os,sys,random
 import subprocess
 from cmd_config import l_init, l_download, l_install
+
 
 def red_print(text):
     print('\033[5;31m{}\033[0m'.format(text))
