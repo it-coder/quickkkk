@@ -1,5 +1,16 @@
 #!/use/bin/env python3
 
+"""
+ISO镜像文件可以在国内源下载
+
+国内清华源：
+https://mirrors.tuna.tsinghua.edu.cn/help
+中国科学技术大学源:
+https://mirrors.ustc.edu.cn/
+阿里源：
+https://opsx.alibaba.com/mirror
+
+"""
 
 """
 0. 更改源
@@ -98,9 +109,9 @@ l_download = [
     # 14: typora
     "wget https://typora.io/linux/Typora-linux-x64.tar.gz -O ~/quickkkk_download/Typora-linux-x64.tar.gz",
 
-    # 15: virtualbox
-    # "wget https://download.virtualbox.org/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb -O ~/quickkkk_download/virtualbox-ubuntu18.deb",
-    "echo '自己手动下载virtualbox'",
+    # 15: virtualbox 清华源
+    "wget https://mirrors.tuna.tsinghua.edu.cn/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb -O ~/quickkkk_download/virtualbox-ubuntu18-6.0.8.deb",
+    # "echo '自己手动下载virtualbox'",
 
     # 17: pycharm-professional
     "wget https://download.jetbrains.8686c.com/python/pycharm-professional-2019.1.3.tar.gz -O ~/quickkkk_download/pycharm-professional-2019.1.3.tar.gz",
@@ -162,8 +173,8 @@ l_install = [
     "unar ~/quickkkk_download/Typora-linux-x64.tar.gz -o ~/software",
 
     # 14: virtualbox
-    # "sudo dpkg -i ~/quickkkk_download/virtualbox*.deb",
-    'echo "自己手动安装virtualbox"',
+    "sudo dpkg -i ~/quickkkk_download/virtualbox*.deb",
+    # 'echo "自己手动安装virtualbox"',
 
     # 15: ssr
     "cp ./files/ssr ~/software",
@@ -183,11 +194,12 @@ l_install = [
     'echo "nitroshare pass"',
 
     # 20: vlc
-    "sudo apt install vlc",
+    #"sudo apt install vlc",
+    "echo 'pass'",
 
     # 21: smplayer
-    # "sudo apt install smplayer",
-    'echo "smplayer pass"',
+    "sudo apt install smplayer",
+    #'echo "smplayer pass"',
 
     # 22: 鼠标主题
     "cp -r ~/quickkkk_download/capitaine-cursors/dist ~/.icons/capitaine-cursors",
@@ -210,6 +222,12 @@ l_install = [
 
     # 28
     "apt install python3-pip",
+
+    # 29 文字转logo
+    "apt install figlet",
+
+    # 30 peek
+    "sudo add-apt-repository ppa:peek-developers/stable;sudo apt update;sudo apt install peek",
 ]
 
 if __name__ == "__main__":
