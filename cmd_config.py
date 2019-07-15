@@ -223,10 +223,10 @@ l_install = [
     # 28
     "apt install python3-pip",
 
-    # 29 文字转logo
-    "apt install figlet",
+    # 29 python3 开发环境
+    "apt install python3-dev",
 
-    # 30 peek
+    # 30 peek gif录制
     "sudo add-apt-repository ppa:peek-developers/stable;sudo apt update;sudo apt install peek",
 ]
 

@@ -42,6 +42,7 @@ python3 start.py install
 * flat-remix图标
 * materia-theme主题
 * FiraCode字体
+* 鼠标主题 capitaine-cursors
 * 悬浮网速内存指示器
 * sfs
 * 网易云
@@ -51,14 +52,15 @@ python3 start.py install
 * wechat
 * tim
 * go
+* clion
 * typora
 * virtualbox
 * pycharm-professional
 * 鼠标主题
 * gtk3 dev
 * neofetch
-* nitroshare
-* vlc
 * smplayer
 * ssr-gui
 * oh-my-zsh
+* python3-dev
+* peek gif录制
