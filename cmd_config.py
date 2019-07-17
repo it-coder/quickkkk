@@ -48,6 +48,9 @@ l_init = [
     # 配置 git
     # "git config --global user.email alonebo.zhou@gmail.com",
     # "git config --global user.name baloneo",
+
+    # 设置最大文件监听数
+    # 'sudo echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf;sudo sysctl -p;',
 ]
 
 l_download_test = [
