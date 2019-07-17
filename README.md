@@ -4,6 +4,7 @@
 ![](https://raw.githubusercontent.com/Baloneo/quickkkk/master/mypc.png)
 
 ## 使用
+> 使用之前请先查看`cmd_config.py`文件，定制你想要的环境。
 * 安装配置基本环境
 下载本项目
 ```
