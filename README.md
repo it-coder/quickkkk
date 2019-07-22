@@ -65,3 +65,4 @@ python3 start.py install
 * oh-my-zsh
 * python3-dev
 * peek gif录制
+* okular

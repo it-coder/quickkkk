@@ -200,7 +200,7 @@ l_install = [
     #"sudo apt install vlc",
     "echo 'pass'",
 
-    # 21: smplayer
+    # 21: smplayer vlc bug多
     "sudo apt install smplayer",
     #'echo "smplayer pass"',
 
@@ -231,6 +231,12 @@ l_install = [
 
     # 30 peek gif录制
     "sudo add-apt-repository ppa:peek-developers/stable;sudo apt update;sudo apt install peek",
+
+    # 31 okular pdf阅读器
+    "sudo apt install okular",
+
+    # 32 终端翻译
+    "sudo apt-get install translate-shell",
 ]
 
 if __name__ == "__main__":
