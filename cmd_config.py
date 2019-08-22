@@ -101,7 +101,10 @@ l_download = [
     "wget https://wdl1.cache.wps.cn/wps/download/ep/Linux2019/8722/wps-office_11.1.0.8722_amd64.deb -O ~/quickkkk_download/wps.deb",
 
     # 11: wechat
-    "wget https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.wechat/deepin.com.wechat_2.6.2.31deepin0_i386.deb -O ~/quickkkk_download/wechat.deb",
+    # "wget https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.wechat/deepin.com.wechat_2.6.2.31deepin0_i386.deb -O ~/quickkkk_download/wechat.deb",
+    # 2019-08-22 安装后提示版本过低 请先打开以下网址进行下载安装，目前深度官方没有提供官方安装包
+    # https://bbs.deepin.org/forum.php?mod=viewthread&tid=181938&extra=
+    'echo "https://bbs.deepin.org/forum.php?mod=viewthread&tid=181938&extra="',
 
     # 12: tim
     "wget https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.office/deepin.com.qq.office_2.0.0deepin4_i386.deb -O ~/quickkkk_download/tim.deb",
